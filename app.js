@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 
 const jsonFile = require('jsonfile');
 process.env.PORT = jsonFile.readFileSync('./config.json').port;
-console.log("BitShares Faucet Running on port:", process.env.PORT);
+console.log("CommodityLLC accounts ROBOT Running on port:", process.env.PORT);
 
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
