@@ -62,6 +62,8 @@ async function startAfterConnected() {
     registrar = await BitShares.accounts[config.bts.registrar];
     console.log('registrar', registrar.id, registrar.name);
 
+    console.log('send on new account', config.bts.sendAfterReg.amount, config.bts.sendAfterReg.asset); 
+
     countRegs = await dbu.dbGet(db, '0xREG') || 0;
     console.log('countRegs', countRegs);
 
@@ -69,10 +71,8 @@ async function startAfterConnected() {
     console.log('assetId', assetId, config.bts.core_asset);
 
     referrer = await BitShares.accounts[config.bts.default_referrer];
-
     console.log('default referrer', referrer.id, referrer.name);
     console.log('premium names', config.bts.allowPremium);
-    console.log('send on new account', config.bts.sendAfterReg.amount, config.bts.sendAfterReg.asset);
     console.log('-------------------------------------------------')
 }
 
@@ -160,7 +160,7 @@ async function registerAccount(options, ip) {
             if (config.bts.sendAfterReg.amount > 0) {
                 setTimeout(async () => {
                     await transfer(options.name, config.bts.sendAfterReg.amount, config.bts.sendAfterReg.asset)
-                }, 15000)
+                }, 10)
             }
 
         } catch (e) {

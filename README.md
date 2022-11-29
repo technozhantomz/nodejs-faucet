@@ -79,9 +79,9 @@ default on http://localhost:48887, for use domain setup nginx
 server {
         listen 80;
         listen 443 ssl;
-        server_name faucet.yoursite.com;
+        server_name register.commodity.llc  www.register.commodity.llc;
         location / {
-        proxy_pass http://localhost:48887;
+        proxy_pass http://localhost:8082;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-For $remote_addr;
         proxy_http_version 1.1;

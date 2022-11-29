@@ -1,18 +1,18 @@
 {
   "port": 48887,
   "bts": {
-    "node": "wss://testnet.xbts.io/ws",
-    "registrar": "your_bitshares_testnet_account",
-    "wif": "your_private_active_key_here",
-    "default_referrer": "your_bitshares_testnet_account",
+    "node": "wss://node.commodity.llc/ws",
+    "registrar": "dennis",
+    "wif": "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3",
+    "default_referrer": "dennis",
     "referrer_percent": 50,
-    "core_asset": "TEST",
+    "core_asset": "KES",
     "timeoutIp": 1800,
     "broadcastTx": true,
     "allowPremium": false,
     "allowCustomerReferer": true,
     "sendAfterReg": {
-      "asset": "TEST",
+      "asset": "KES",
       "amount": 10
     }
   }

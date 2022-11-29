@@ -1,0 +1,17 @@
+server {
+	listen 80;
+	listen [::]:80;
+	# include snippets/snakeoil.conf;
+
+	root /var/www/pi.commodity.llc/pi_html/pi;
+
+	# Add index.php to the list if you are using PHP
+	#index index.html index.htm index.nginx-debian.html;
+
+	server_name pi.commodity.llc www.pi.commodity.llc;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+}

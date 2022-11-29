@@ -1,18 +1,18 @@
 {
   "port": 48887,
   "bts": {
-    "node": "wss://cloud.xbts.io/ws",
-    "registrar": "xbtsio-wallet",
+    "node": "wss://cloud.p.io/ws",
+    "registrar": "dennis",
     "wif": "your_private_active_key_here",
-    "default_referrer": "xbtsx",
+    "default_referrer": "dennis",
     "referrer_percent": 50,
-    "core_asset": "BTS",
-    "timeoutIp": 1800,
+    "core_asset": "USD",
+    "timeoutIp": 45,
     "broadcastTx": true,
     "allowPremium": false,
     "allowCustomerReferer": true,
     "sendAfterReg": {
-      "asset": "BTS",
+      "asset": "USD",
       "amount": 0
     }
   }
